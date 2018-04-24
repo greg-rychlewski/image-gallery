@@ -1,0 +1,44 @@
+/* Entry Title */
+#entry-container h1 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Outer Container for Images */
+#entry-image-list {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 40px auto;
+}
+
+/* Container for Individual Image */
+.entry-preview-container {
+    cursor: pointer;
+    vertical-align: top;
+    display: inline-block;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 645px) {
+    #entry-container h1 {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+
+    .entry-preview-container {
+        margin: 10px;
+    }
+}

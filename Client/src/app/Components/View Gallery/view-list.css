@@ -1,0 +1,52 @@
+/* Entry icon container */
+#entry-list {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 40px auto;
+}
+
+/* Search/filter navigation */
+#list-filter {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+#list-filter input, #list-filter select {
+    width: 250px;
+    font-size: 14px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    margin: 40px 15px 0 15px;
+    padding: 10px 20px;
+}
+
+#list-filter select option[data-default] {
+  color: #777;
+}
+
+/* Load Button */
+.load-button {
+    width: 200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 645px) {
+    #list-filter {
+        margin: 0 auto 20px auto;
+    }
+
+    #list-filter input, #list-filter select {
+        margin: 20px 25px 0 25px;
+    }
+
+    #entry-list .form-button {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,33 @@
+/* Section Title */
+#new-image-container h1 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Uploaded Images Container */
+#new-image-list {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navigation Buttons */
+#new-image-container .form-button {
+    margin-bottom: 40px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 560px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #new-image-container h1 {
+        margin: 20px 0;
+    }
+}

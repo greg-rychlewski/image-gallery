@@ -1,0 +1,214 @@
+/* Container */
+#home-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    -webkit-transform: translate(-50%, -30%);
+    -moz-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+}
+
+/* Title */
+#home-title {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 48%;
+}
+
+#home-title svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+svg * { transform-box: fill-box; }
+
+.title-rect {
+    fill: #5c6977;
+    stroke: #222;
+    stroke-width: 0.2px;
+}
+
+.title-text {
+    cursor: default;
+    font-size: 15px;
+    stroke-width: 0.5px;
+}
+
+.svgtransformations #title-group-top .title-text, .svgtransformations #title-group-bottom .title-text {
+    fill: #5c6977;
+}
+
+.svgtransformations .title-text {
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+    stroke: #fff;
+    animation-delay: 0s, 1s;
+    animation-fill-mode: forwards, forwards;
+    animation-duration: 4s, 1s;
+    animation-name: draw, fill;
+    -webkit-animation-delay: 0s, 1s;
+    -webkit-animation-fill-mode: forwards, forwards;
+    -webkit-animation-duration: 4s, 1s;
+    -webkit-animation-name: draw, fill;
+}
+
+.no-svgtransformations .title-text {
+    fill: #fff;
+}
+
+.svgtransformations #title-group-top {
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-name: rotate-top;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: rotate-top;
+}
+
+.no-svgtransformations #title-group-top {
+    transform: translate(-5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+}
+
+.svgtransformations #title-group-bottom {
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-name: rotate-bottom;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: rotate-bottom;
+}
+
+.no-svgtransformations #title-group-bottom {
+    transform: translate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+}
+
+/* Menu */
+#home-menu {
+    position: relative;
+    text-align: center;
+}
+
+.menu-button {
+    display: inline-block;
+    cursor: pointer;
+    width: 25%;
+    min-width: 125px;
+    background-color: #3c8dcc;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 4% 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+    
+}
+
+.svgtransformations .menu-button {
+    opacity: 0;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-name: show-button;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: show-button;
+}
+
+#home-new {
+    margin-top: 30px;
+}
+
+.menu-button:hover {
+    background-color: #50aef8;
+}
+
+/* Animations */
+@keyframes draw {
+    100% {
+        stroke-dashoffset: 0%;
+    }
+}
+
+@keyframes fill {
+    100% {
+        fill: #fff;
+    }
+}
+
+@keyframes rotate-top {
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes rotate-bottom {
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes show-button {
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes draw {
+    100% {
+        stroke-dashoffset: 0%;
+    }
+}
+
+@-webkit-keyframes fill {
+    100% {
+        fill: #fff;
+    }
+}
+
+@-webkit-keyframes rotate-top {
+    100% {
+        -webkit-transform: rotate(5deg);
+    }
+}
+
+@-webkit-keyframes rotate-bottom {
+    100% {
+        -webkit-transform: rotate(-5deg);
+    }
+}
+
+@-webkit-keyframes show-button {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Text */
+@media screen and (max-width: 780px) {
+    #home-view {
+        margin-top: 10px;
+    }
+    
+    #add-second-word {
+        display: none;
+    }
+}

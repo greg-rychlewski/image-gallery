@@ -1,0 +1,12 @@
+#test-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#test-element {
+    transform: translate(2px);
+    -webkit-transform: translate(2px);
+    -moz-transform: translate(2px);
+    -ms-transform: translate(2px);
+}

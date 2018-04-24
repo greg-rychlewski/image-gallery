@@ -1,0 +1,87 @@
+/* Image Container */
+.image-holder {
+    position: relative;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.image-holder img {
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.image-holder:hover .display {
+    top: 170px;
+}
+
+/* Edit Icon */
+.edit-icon {
+    display: none;
+}
+
+.image-holder:hover .edit-icon {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    color: #222;
+    padding: 10px;
+}
+
+/* Display Information About Collection */
+.display {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 200px;
+    left: 0;
+    background: #222;
+    opacity: 0.9;
+    color: #fff;
+    transition: 0.5s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.image-name {
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    height: 50px;
+}
+
+.image-info {
+    position: relative;
+    height: 30px;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+#name-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.num-images {
+    float: left;
+}
+
+.image-date {
+    float: right;;
+}
+
+.ellipsis:after {
+    content: "\2026";
+}
+
+/* Responsiveness */
+@media screen and (max-width:645px) {
+    .image-holder {
+        margin: 10px;
+    }
+}

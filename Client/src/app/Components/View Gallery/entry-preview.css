@@ -1,0 +1,68 @@
+.expand-preview-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.overlay {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    opacity: 0.98;
+}
+
+.expand-preview-image {
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.expand-preview-image img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #777;
+    border-radius: 5px;
+}
+
+.expand-preview-prev, .expand-preview-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e2e2e2;
+    font-size: 40px;
+}
+
+.expand-preview-prev {
+    left: -55px;
+    padding: 15px;
+}
+
+.expand-preview-next {
+    right: -55px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 450px) {
+    .expand-preview-prev {
+        left: -40px;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .expand-preview-next {
+        right: -40px;
+        font-size: 30px;
+        padding: 10px;
+    }
+}

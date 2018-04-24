@@ -3,4 +3,4 @@ export let cloudinaryConfig = {
     cloudName: name,
 };
 
-export let serverIP = ipAddress";
+export let serverIP = ipAddress;

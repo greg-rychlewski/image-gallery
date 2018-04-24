@@ -4,5 +4,3 @@
 ---
 * Frontend: React, Webpack
 * Backend: Python Flask Framework
-
-**Temporal Difference Learning**

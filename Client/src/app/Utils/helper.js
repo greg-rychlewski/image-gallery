@@ -55,8 +55,8 @@ export let months = [
     "August",
     "September", 
     "October", 
-     "November", 
-     "December",
+    "November", 
+    "December",
 ];
 
 export let years = intArray(2010, new Date().getFullYear());
